@@ -1,0 +1,10 @@
+framework = {
+    Enabled = true,
+    Prediction = 0.1433,
+    HitscanPriority = "HumanoidRootPart",
+    FOV = 200,
+    Scan = false,
+    JumpOffset = 0
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5859d948244d1fc2ec2b076c1abfbfa3.lua"))()
