@@ -30,7 +30,7 @@ local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
-   Title = "You executed the script",
+   Title = "Thanks for buying DevineSploit have fun.",
    Content = "Made by .entityvalk on discord.",
    Duration = 5,
    Image = 13047715178,
@@ -58,6 +58,14 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "Rejoin server",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/yVdXMaFy'))()
+   end,
+})
+
+
 local TPTab = Window:CreateTab("📱 Mobile Scripts", nil) -- Title, Image
 
 local Button1 = TPTab:CreateButton({
@@ -74,9 +82,6 @@ local Button2 = TPTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲 Coming soon!", nil) -- Title, Image
-
-
 
 
 local MainSection = MainTab:CreateSection("Speed")
@@ -87,3 +92,53 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local MainSection = MainTab:CreateSection("AntiLock/Resolvers")
+
+local Button = MainTab:CreateButton({
+   Name = "AntiLock Toggle Z",
+   Callback = function()
+  loadstring(game:HttpGet(('https://raw.githubusercontent.com/AvianProjects/Dahood/main/AntilockerV2'),true))()
+   end,
+})
+
+local TPTab = Window:CreateTab("🎲 Coming soon!", nil) -- Title, Image
+
+
+
+local gui = script.Parent -- Assuming the GUI is a direct child of the script
+
+-- Function to close the GUI
+local function closeGUI()
+    gui.Enabled = false
+end
+
+-- Check if the platform is mobile
+local isMobile = game:GetService("UserInputService").TouchEnabled
+
+-- Create a close button
+local closeButton = Instance.new("TextButton")
+closeButton.Name = "CloseButton"
+closeButton.Text = "Close"
+closeButton.Size = UDim2.new(0, 100, 0, 50)
+closeButton.Position = UDim2.new(0.5, -50, 0.9, -25)
+closeButton.Parent = gui
+
+-- Bind a function to the close button
+closeButton.MouseButton1Click:Connect(closeGUI)
+
+-- If it's a mobile platform, allow closing GUI with a swipe gesture
+if isMobile then
+    local dragInput, dragStart, startPos
+
+    closeButton.MouseButton1Down:Connect(function()
+        startPos = closeButton.Position
+        dragStart = Vector2.new(gui.AbsolutePosition.X, gui.AbsolutePosition.Y)
+        closeButton.MouseMoved:Connect(function()
+            dragInput = Vector2.new(gui.AbsolutePosition.X, gui.AbsolutePosition.Y) - dragStart
+            closeButton.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + dragInput.X, startPos.Y.Scale, startPos.Y.Offset + dragInput.Y)
+        end)
+        closeButton.MouseButton1Up:Connect(function()
+            dragInput = nil
+        end)
+    end)
+end
