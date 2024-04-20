@@ -92,12 +92,21 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+
+local Button = MainTab:CreateButton({
+   Name = "CFrame Gui",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/Vbh5ivX2'))()
+   end,
+})
+
+
 local MainSection = MainTab:CreateSection("AntiLock/Resolvers")
 
 local Button = MainTab:CreateButton({
    Name = "AntiLock Toggle Z",
    Callback = function()
-  loadstring(game:HttpGet(('https://raw.githubusercontent.com/AvianProjects/Dahood/main/AntilockerV2'),true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AvianProjects/Dahood/main/AntilockerV2",true))()
    end,
 })
 
