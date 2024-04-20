@@ -58,6 +58,32 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲 Coming soon!", nil) -- Title, Image
+local TPTab = Window:CreateTab("📱 Mobile Scripts", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Speed Tool",
+   Callback = function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/aFZDmKMr", true))()
+   end,
+})
+
+local Button2 = TPTab:CreateButton({
+   Name = "Tool Lock OP",
+   Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/G2DAew4x'))()
+   end,
+})
 
 local TPTab = Window:CreateTab("🎲 Coming soon!", nil) -- Title, Image
+
+
+
+
+local MainSection = MainTab:CreateSection("Speed")
+local Button = MainTab:CreateButton({
+   Name = "Speed Tool",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/aFZDmKMr", true))()
+   end,
+})
+
