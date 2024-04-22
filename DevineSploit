@@ -52,11 +52,29 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "tool lock pc/mob",
+   Name = "Patched :(",
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/G2DAew4x'))()
    end,
 })
+
+
+local Button = MainTab:CreateButton({
+   Name = "AutoBuy Armor",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/E0qfyZG3'))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Lunar.VIP Just because u bought DevineSploit",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/CrashoutDemonn/Lunar.vip-Leak/main/lunar.lua'))()
+   end,
+})
+
+
 
 local Button = MainTab:CreateButton({
    Name = "Rejoin server",
@@ -76,7 +94,7 @@ local Button1 = TPTab:CreateButton({
 })
 
 local Button2 = TPTab:CreateButton({
-   Name = "Tool Lock OP",
+   Name = "Patched :(",
    Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/G2DAew4x'))()
    end,
@@ -110,44 +128,4 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲 Coming soon!", nil) -- Title, Image
-
-
-
-local gui = script.Parent -- Assuming the GUI is a direct child of the script
-
--- Function to close the GUI
-local function closeGUI()
-    gui.Enabled = false
-end
-
--- Check if the platform is mobile
-local isMobile = game:GetService("UserInputService").TouchEnabled
-
--- Create a close button
-local closeButton = Instance.new("TextButton")
-closeButton.Name = "CloseButton"
-closeButton.Text = "Close"
-closeButton.Size = UDim2.new(0, 100, 0, 50)
-closeButton.Position = UDim2.new(0.5, -50, 0.9, -25)
-closeButton.Parent = gui
-
--- Bind a function to the close button
-closeButton.MouseButton1Click:Connect(closeGUI)
-
--- If it's a mobile platform, allow closing GUI with a swipe gesture
-if isMobile then
-    local dragInput, dragStart, startPos
-
-    closeButton.MouseButton1Down:Connect(function()
-        startPos = closeButton.Position
-        dragStart = Vector2.new(gui.AbsolutePosition.X, gui.AbsolutePosition.Y)
-        closeButton.MouseMoved:Connect(function()
-            dragInput = Vector2.new(gui.AbsolutePosition.X, gui.AbsolutePosition.Y) - dragStart
-            closeButton.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + dragInput.X, startPos.Y.Scale, startPos.Y.Offset + dragInput.Y)
-        end)
-        closeButton.MouseButton1Up:Connect(function()
-            dragInput = nil
-        end)
-    end)
-end
+local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image
