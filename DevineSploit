@@ -52,9 +52,9 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Patched :(",
+   Name = "Dot Lock OP (Q)",
    Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/G2DAew4x'))()
+   loadstring(game:HttpGet('https://pastebin.com/raw/VMnyW7Uh'))()
    end,
 })
 
@@ -94,9 +94,9 @@ local Button1 = TPTab:CreateButton({
 })
 
 local Button2 = TPTab:CreateButton({
-   Name = "Patched :(",
+   Name = "Tool lock",
    Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/G2DAew4x'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/blockslol/guapware.cc/main/GUAPWARE.lua"))()
    end,
 })
 
@@ -128,4 +128,4 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image
+local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image 
