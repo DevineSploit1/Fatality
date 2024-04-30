@@ -58,6 +58,24 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "Fatality OP tool lock (PC VERSION CHECK MOB TAB FOR MOB VERSION)",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/59dq9sHi'))()
+   end,
+})
+
+
+
+
+local Button = MainTab:CreateButton({
+   Name = "ZapX Mob/PC",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/zkAJ18xT'))()
+   end,
+})
+
+
 
 local Button = MainTab:CreateButton({
    Name = "AutoBuy Armor",
@@ -96,7 +114,24 @@ local Button1 = TPTab:CreateButton({
 local Button2 = TPTab:CreateButton({
    Name = "Tool lock",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blockslol/guapware.cc/main/GUAPWARE.lua"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ePQBxWMr"))()
+   end,
+})
+
+
+local Button3 = TPTab:CreateButton({
+   Name = "ZapX Mob/PC",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/zkAJ18xT'))()
+   end,
+})
+
+
+
+local Button2 = TPTab:CreateButton({
+   Name = "Fatality Tool lock (Best)",
+   Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zARkjVBw"))()
    end,
 })
 
