@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/NqiBGZ3s", true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/CgUWUXsR", true))()
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -167,4 +168,3 @@ local Button = MainTab:CreateButton({
 })
 
 local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image 
-
