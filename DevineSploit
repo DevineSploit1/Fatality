@@ -65,7 +65,7 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Fatality OP tool lock (PC VERSION CHECK MOB TAB FOR MOB VERSION)",
    Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/59dq9sHi'))()
+   loadstring(game:HttpGet('https://pastebin.com/raw/zARkjVBw'))()
    end,
 })
 
@@ -133,7 +133,7 @@ local Button3 = TPTab:CreateButton({
 
 
 local Button2 = TPTab:CreateButton({
-   Name = "Fatality Tool lock (Best)",
+   Name = "Best Mobile Lock",
    Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/zARkjVBw"))()
    end,
