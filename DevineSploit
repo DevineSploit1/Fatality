@@ -65,7 +65,7 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Fatality OP tool lock (PC VERSION CHECK MOB TAB FOR MOB VERSION)",
    Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/zARkjVBw'))()
+   loadstring(game:HttpGet('https://pastebin.com/raw/59dq9sHi'))()
    end,
 })
 
@@ -115,27 +115,10 @@ local Button1 = TPTab:CreateButton({
    end,
 })
 
-local Button2 = TPTab:CreateButton({
-   Name = "Tool lock",
-   Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/ePQBxWMr"))()
-   end,
-})
-
-
 local Button3 = TPTab:CreateButton({
    Name = "ZapX Mob/PC",
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/zkAJ18xT'))()
-   end,
-})
-
-
-
-local Button2 = TPTab:CreateButton({
-   Name = "Best Mobile Lock",
-   Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/zARkjVBw"))()
    end,
 })
 
@@ -151,9 +134,9 @@ local Button = MainTab:CreateButton({
 
 
 local Button = MainTab:CreateButton({
-   Name = "CFrame Gui",
+   Name = "Patched currently",
    Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/Vbh5ivX2'))()
+   loadstring(game:HttpGet('nothing'))()
    end,
 })
 
@@ -167,4 +150,14 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲Coming soon!", nil) -- Title, Image 
+local TPTab = Window:CreateTab("DevineSploitV2", nil) -- Title, Image 
+
+local TPSection = TPTab:CreateSection("DevineSploitV2")
+
+
+local Button = TPTab:CreateButton({
+   Name = "DevineSploitV2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DevineSploit/wakd-q/main/qdw",true))()
+   end,
+})
