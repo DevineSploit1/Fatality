@@ -63,9 +63,9 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Fatality OP tool lock (PC VERSION CHECK MOB TAB FOR MOB VERSION)",
+   Name = "Best tool lock ever (PC VERSION, CHECK MOB TAB FOR MOB VERSION)",
    Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/59dq9sHi'))()
+   loadstring(game:HttpGet('https://pastebin.com/raw/FWxW5NSA'))()
    end,
 })
 
@@ -90,15 +90,6 @@ local Button = MainTab:CreateButton({
 
 
 local Button = MainTab:CreateButton({
-   Name = "Lunar.VIP Just because u bought DevineSploit",
-   Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/CrashoutDemonn/Lunar.vip-Leak/main/lunar.lua'))()
-   end,
-})
-
-
-
-local Button = MainTab:CreateButton({
    Name = "Rejoin server",
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/yVdXMaFy'))()
@@ -117,6 +108,14 @@ local Button1 = TPTab:CreateButton({
 
 local Button3 = TPTab:CreateButton({
    Name = "ZapX Mob/PC",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/zkAJ18xT'))()
+   end,
+})
+
+
+local Button3 = TPTab:CreateButton({
+   Name = "Best tool lock ever (MOB VERSION, CHECK HOME TAB FOR PC VERSION",
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/zkAJ18xT'))()
    end,
