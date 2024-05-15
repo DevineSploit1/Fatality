@@ -158,6 +158,6 @@ local TPSection = TPTab:CreateSection("DevineSploitV2")
 local Button = TPTab:CreateButton({
    Name = "DevineSploitV2",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/DevineSploit/wakd-q/main/qdw",true))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/YWU4rkiu",true))()
    end,
 })
